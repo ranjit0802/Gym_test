@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness clube</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600&display=swap" rel="stylesheet">
+    <style>
+body {
+    margin: 0px;
+    padding: 0px;
+    background: url('/img2.jpg');
+    background-color: aquamarine; 
+     background: url('bg.jpg') no-repeat ; 
+    color: wheat;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+
+.left {
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    display: inline-block;
+}
+.left img{
+    border-radius: 35px;
+    height: 56px;
+    width: 60px;
+}
+.mid {
+    display: block;
+    width: 50%;
+    height: 50px;
+    margin: 10px 80px;
+}
+
+.right {
+    position: absolute;
+    right: 34px;
+    top: 30px;
+    display: inline-block;
+    padding: 0px 3px;
+    
+}
+.right button{
+    border-radius: 10px;
+    font-family: 'Baloo Bhai 2', cursive;
+    cursor: pointer;
+    font-weight: bold;
+}
+.right button:hover{
+    background-color: rgb(164, 174, 184);
+    color: aliceblue;
+}
+
+.nevbar{
+    display: inline-block;
+    z-index: 3 !important;
+    
+}
+ul{
+   overflow: auto;
+}
+li{
+    display: inline-block;
+
+    list-style: none;
+    margin: 0px 15px;
+   
+}
+.nevbar a:hover{
+    border-radius: 5px;
+    color: rgb(250, 248, 248);
+    font-weight: bolder;
+    background-color: rgb(66, 57, 53);
+}
+a{
+    color: rgb(240, 184, 184);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0px 5px;
+
+}
+.cantainer{
+    position: absolute;
+    top: 125px;
+    left: 110px;
+    border-radius: 10px;
+    padding: 0px 80px 10px 80px;
+}
+.formpart{
+    margin: 0px 30px;
+}
+.formpart input{
+    text-align: center;
+    display: block;
+    padding: 0px 50px;
+    margin: 10px 0px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+#hedding{
+    text-align: center;
+
+}
+.cantainer button{
+    display: flex;
+    width: 40%;
+    margin: auto;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 17px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.cantainer button:hover{
+    background-color: rgb(180, 199, 199);
+    color: white;
+}
+.img{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+    </style>
+</head>
+
+<body>
+    <headre class="header">
+        <div class="left">
+            <img src="logo.jpeg" alt=" Fitness clube">
+        </div>
+        <div class="mid">
+            <nav class="nevbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Fitness calculator</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right"> 
+            <button class="btn">Call now</button>
+            <button class="btn">Email us</button>
+        </div>
+    </headre>
+    <div class="cantainer">
+        <div id="hedding">
+            <h2 class="joinTable">Join the best gym in Rajkot Now !!</h2>
+        </div>
+        <div>
+           <form action="noaction.php">
+               <div class="formpart">
+                   <input type="text" placeholder="Enter Your Name">
+               </div>
+               <div class="formpart">
+                   <input type="text" placeholder="Enter Your Email">
+               </div>
+               <div class="formpart">
+                   <input type="text" placeholder="Enter Your number">
+               </div>
+               <div class="formpart">
+                   <input type="text" placeholder="Enter Your place">
+               </div>
+               <div class="formpart">
+                   <input type="text" placeholder="Enter Your Age">
+               </div>
+            </form>
+            <button class="btn">Submit</button>
+        </div>
+    </div>
+</body>
+
+</html>
